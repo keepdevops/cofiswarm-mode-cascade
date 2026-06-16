@@ -1,20 +1,16 @@
 # cofiswarm-mode-cascade
 
-Cofiswarm component: `mode-cascade`.
+Mode plugin service (cascade) — HTTP execute endpoint for `cofiswarm-dispatch`.
 
-- Layout: [REPO-STANDARD-LAYOUT](https://github.com/keepdevops/cofiswarmdev/blob/main/docs/REPO-STANDARD-LAYOUT.md)
-- Migration: [MIGRATION-SPRINTS](https://github.com/keepdevops/cofiswarmdev/blob/main/docs/MIGRATION-SPRINTS.md)
+- SDK: [cofiswarm-mode-sdk](../cofiswarm-mode-sdk)
+- Legacy C++: `legacy/cpp/`
+- Config gate: `dispatch_url` + `slot_manager_url` in `test/standalone/etc/cofiswarm/mode-cascade/mode-cascade.yaml`
 
-## FHS paths
-
-| Path | Purpose |
-|------|---------|
-| `/etc/cofiswarm/mode-cascade/` | config |
-| `/var/lib/cofiswarm/mode-cascade/` | state |
-| `/var/log/cofiswarm/mode-cascade/` | logs |
-
-## Test
+## Run
 
 ```bash
-./test/scripts/assert-layout.sh mode-cascade
+make build
+./bin/cofiswarm-mode-cascade -config test/standalone/etc/cofiswarm/mode-cascade/mode-cascade.yaml
 ```
+
+Default listen: `:8023`

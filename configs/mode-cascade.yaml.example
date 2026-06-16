@@ -1,0 +1,6 @@
+mode: mode-cascade
+listen: ":8023"
+dispatch_url: http://127.0.0.1:8010
+slot_manager_url: http://127.0.0.1:8013
+kvpool_url: http://127.0.0.1:8014
+agent_registry_url: http://127.0.0.1:8012
