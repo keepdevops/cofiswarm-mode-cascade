@@ -5,5 +5,3 @@ go 1.22
 require github.com/keepdevops/cofiswarm-mode-sdk v0.0.0
 
 require gopkg.in/yaml.v3 v3.0.1 // indirect
-
-replace github.com/keepdevops/cofiswarm-mode-sdk => ../cofiswarm-mode-sdk
