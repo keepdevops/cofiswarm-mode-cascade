@@ -2,7 +2,7 @@ module github.com/keepdevops/cofiswarm-mode-cascade
 
 go 1.25.0
 
-require github.com/keepdevops/cofiswarm-mode-sdk v0.1.0
+require github.com/keepdevops/cofiswarm-mode-sdk v1.2.3
 
 require (
 	github.com/klauspost/compress v1.18.5 // indirect
